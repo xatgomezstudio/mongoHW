@@ -4,6 +4,12 @@ module.exports = (app) => {
     // Require all models
     var db = require("../models");
 
+    // Our scraping tools
+    // Axios is a promised-based http library, similar to jQuery's Ajax method
+    // It works on the client and on the server
+    var axios = require("axios");
+    var cheerio = require("cheerio");
+
     // ARTICLE Routes
 
     //////SCRAPE route, a GET for scraping the website:: Route
